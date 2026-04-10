@@ -20,12 +20,11 @@ public class MortgageCalculator {
         double n = 12 * loanLength;
 
         //M = P × (i * (1 + i)^n / ( (1 + i)^n ) - 1)
-
         double m = p * (i * Math.pow(1 + i, n)) / (Math.pow(1 + i, n) - 1);
 
 
         double totalInterest = (m*n) - p;
 
-        System.out.printf("$.2f/mo payment with a total interest of $%.2f", m, totalInterest);
+        System.out.printf("$%.2f/mo payment with a total interest of $%.2f", m, totalInterest);
     }
 }
